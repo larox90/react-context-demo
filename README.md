@@ -1,6 +1,8 @@
 # TESTING THE CONTEXT FUNCTIONALITY IN REACT P1.
 
-In this application we made a quick test in order to see how the _Context functionality_ works in React, we have mainly two folders, one called context, here we will define each of the context we need to use around our application.
+In this application we made a quick test in order to see how the _Context functionality_ works in React, the context feature let us manage and share data around the application without need to send component to component these data, as long as we have these components wrapped with our Context we will have access to this data.
+
+we have mainly two folders, one called context, here we will define each of the context we need to use around our application.
 
 the other folder is components, here we created 4 components, GrandParent that is used at App level, inside of _GrandParent_ we have Parent component, and inside of the _Parent_ component we have 2 children.
 
