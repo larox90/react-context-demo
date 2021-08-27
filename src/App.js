@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import GrandParent from './components/GrandParent';
 
+/**
+ * this app is to explain our the context functionality works
+ * in this example we have a GrandParent component that it has inside
+ * other component called Parent, and Parent has 2 children.
+ * these 2 children will be able to work with the context data
+ * even that we are not sending it through props.
+ * and the context was defined one App above it means this context
+ * is wrapping <App> component. (index.js)
+ * @returns
+ */
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GrandParent />
     </div>
   );
 }
